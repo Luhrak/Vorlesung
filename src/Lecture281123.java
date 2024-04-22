@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class lecture281123 {
+public class Lecture281123 {
 
 	public static void main(String[] args) {
 		// void is like boolean but only 1 state "nothing" / 0 / void 
