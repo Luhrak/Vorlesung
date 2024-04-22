@@ -18,5 +18,20 @@ public class Lecture220424 {
 
 		// if one method is abstract in a class java expects the whole class to be
 		// cuz it implies there has to be a subclass
+		
+		///////////////////
+		
+		
+		// An interface only has abstract methods so it doesnt have to delcare that 
+		// classes can only extend 1 class but no limit on implements 
+		
+		interface Flugfähig {
+			public void fliegen();
+			public void landen(); 
+		}
+		
+		// ... Animal implements Flugfähig, Aquatic {
+		
+		
 	}
 }
