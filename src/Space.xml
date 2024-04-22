@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Gebaeude [
+	<!ELEMENT Gebaeude (Raum+)>
+	<!ATTLIST Raum belueftung CDATA #REQUIRED>
+	<!ELEMENT Raum (Ebene, Nummer, Laenge, Breite, Inhalt)>
+					<!ATTLIST Raum belueftung ( true | false ) #REQUIRED>
+	<!ELEMENT Ebene (#PCDATA)>
+	<!ELEMENT Nummer (#PCDATA)>
+	<!ELEMENT Laenge (#PCDATA)>
+	<!ATTLIST Laenge einheit CDATA #REQUIRED>
+	<!ELEMENT Breite (#PCDATA)>
+	<!ATTLIST Breite einheit CDATA #REQUIRED>
+	
+				<!ATTLIST Laenge einheit ( meter | zoll ) #REQUIRED>
+				<!ATTLIST Breite einheit ( meter | zoll ) #REQUIRED>
+	<!ELEMENT Inhalt (Tisch*, Stuhl*)> 
+		<!ELEMENT Tisch (#PCDATA)>
+		<!ELEMENT Stuhl (#PCDATA)>
+]>
+
+<Gebaeude>
+	<Raum belueftung="true">
+		<Ebene>1</Ebene>
+		<Nummer>23</Nummer>
+		<Laenge einheit="meter">8,3</Laenge>
+		<Breite einheit="zoll">4,6</Breite>
+		<Inhalt>
+			<Tisch></Tisch>
+			<Tisch></Tisch>
+			<Stuhl></Stuhl>
+			<Stuhl></Stuhl>
+		</Inhalt>
+	</Raum>
+	<Raum belueftung="true">
+		<Ebene>3</Ebene>
+		<Nummer>13</Nummer>
+		<Laenge einheit="meter">5,2</Laenge>
+		<Breite einheit="zoll">9,6</Breite>
+		<Inhalt>
+		</Inhalt>
+	</Raum>
+</Gebaeude>	
